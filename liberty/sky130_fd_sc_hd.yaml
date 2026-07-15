@@ -1,0 +1,1217 @@
+settings:
+    lib_name: sky130_fd_sc_hd_tt.charlib
+    results_dir: sky130
+    units:
+        current: mA
+        pulling_resistance: kohm
+    named_nodes:
+        primary_power:
+            name: VPWR
+            voltage: 1.8
+        primary_ground:
+            name: VGND
+        nwell:
+            name: VPB
+            voltage: 1.8
+        pwell:
+            name: VNB
+    cell_defaults:
+        netlist: ~/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+        models:
+            - ~/.ciel/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+            - ./sky130_params.spice
+        data_slews: [0.0100000000, 0.0230505800, 0.0531329300, 0.1224745000, 0.2823108000, 0.6507428000, 1.5000000000]
+        loads: [0.0005000000, 0.0013283360, 0.0035289520, 0.0093752650, 0.0249070000, 0.0661697100, 0.1757912000]
+cells:
+    sky130_fd_sc_hd__a2111o_1:
+        functions: [X = (A1&A2) | (B1) | (C1) | (D1)]
+    sky130_fd_sc_hd__a2111o_2:
+        functions: [X = (A1&A2) | (B1) | (C1) | (D1)]
+    sky130_fd_sc_hd__a2111o_4:
+        functions: [X = (A1&A2) | (B1) | (C1) | (D1)]
+    sky130_fd_sc_hd__a2111oi_0:
+        functions: [Y = (!A1&!B1&!C1&!D1) | (!A2&!B1&!C1&!D1)]
+    sky130_fd_sc_hd__a2111oi_1:
+        functions: [Y = (!A1&!B1&!C1&!D1) | (!A2&!B1&!C1&!D1)]
+    sky130_fd_sc_hd__a2111oi_2:
+        functions: [Y = (!A1&!B1&!C1&!D1) | (!A2&!B1&!C1&!D1)]
+    sky130_fd_sc_hd__a2111oi_4:
+        functions: [Y = (!A1&!B1&!C1&!D1) | (!A2&!B1&!C1&!D1)]
+    sky130_fd_sc_hd__a211o_1:
+        functions: [X = (A1&A2) | (B1) | (C1)]
+    sky130_fd_sc_hd__a211o_2:
+        functions: [X = (A1&A2) | (B1) | (C1)]
+    sky130_fd_sc_hd__a211o_4:
+        functions: [X = (A1&A2) | (B1) | (C1)]
+    sky130_fd_sc_hd__a211oi_1:
+        functions: [Y = (!A1&!B1&!C1) | (!A2&!B1&!C1)]
+    sky130_fd_sc_hd__a211oi_2:
+        functions: [Y = (!A1&!B1&!C1) | (!A2&!B1&!C1)]
+    sky130_fd_sc_hd__a211oi_4:
+        functions: [Y = (!A1&!B1&!C1) | (!A2&!B1&!C1)]
+    sky130_fd_sc_hd__a21bo_1:
+        functions: [X = (A1&A2) | (!B1_N)]
+    sky130_fd_sc_hd__a21bo_2:
+        functions: [X = (A1&A2) | (!B1_N)]
+    sky130_fd_sc_hd__a21bo_4:
+        functions: [X = (A1&A2) | (!B1_N)]
+    sky130_fd_sc_hd__a21boi_0:
+        functions: [Y = (!A1&B1_N) | (!A2&B1_N)]
+    sky130_fd_sc_hd__a21boi_1:
+        functions: [Y = (!A1&B1_N) | (!A2&B1_N)]
+    sky130_fd_sc_hd__a21boi_2:
+        functions: [Y = (!A1&B1_N) | (!A2&B1_N)]
+    sky130_fd_sc_hd__a21boi_4:
+        functions: [Y = (!A1&B1_N) | (!A2&B1_N)]
+    sky130_fd_sc_hd__a21o_1:
+        functions: [X = (A1&A2) | (B1)]
+    sky130_fd_sc_hd__a21o_2:
+        functions: [X = (A1&A2) | (B1)]
+    sky130_fd_sc_hd__a21o_4:
+        functions: [X = (A1&A2) | (B1)]
+    sky130_fd_sc_hd__a21oi_1:
+        functions: [Y = (!A1&!B1) | (!A2&!B1)]
+    sky130_fd_sc_hd__a21oi_2:
+        functions: [Y = (!A1&!B1) | (!A2&!B1)]
+    sky130_fd_sc_hd__a21oi_4:
+        functions: [Y = (!A1&!B1) | (!A2&!B1)]
+    sky130_fd_sc_hd__a221o_1:
+        functions: [X = (B1&B2) | (A1&A2) | (C1)]
+    sky130_fd_sc_hd__a221o_2:
+        functions: [X = (B1&B2) | (A1&A2) | (C1)]
+    sky130_fd_sc_hd__a221o_4:
+        functions: [X = (B1&B2) | (A1&A2) | (C1)]
+    sky130_fd_sc_hd__a221oi_1:
+        functions: [Y = (!A1&!B1&!C1) | (!A1&!B2&!C1) | (!A2&!B1&!C1) | (!A2&!B2&!C1)]
+    sky130_fd_sc_hd__a221oi_2:
+        functions: [Y = (!A1&!B1&!C1) | (!A1&!B2&!C1) | (!A2&!B1&!C1) | (!A2&!B2&!C1)]
+    sky130_fd_sc_hd__a221oi_4:
+        functions: [Y = (!A1&!B1&!C1) | (!A1&!B2&!C1) | (!A2&!B1&!C1) | (!A2&!B2&!C1)]
+    sky130_fd_sc_hd__a222oi_1:
+        functions: [Y = (!A1&!B1&!C1) | (!A1&!B1&!C2) | (!A1&!B2&!C1) | (!A2&!B1&!C1) | (!A1&!B2&!C2) | (!A2&!B1&!C2) | (!A2&!B2&!C1) | (!A2&!B2&!C2)]
+    sky130_fd_sc_hd__a22o_1:
+        functions: [X = (B1&B2) | (A1&A2)]
+    sky130_fd_sc_hd__a22o_2:
+        functions: [X = (B1&B2) | (A1&A2)]
+    sky130_fd_sc_hd__a22o_4:
+        functions: [X = (B1&B2) | (A1&A2)]
+    sky130_fd_sc_hd__a22oi_1:
+        functions: [Y = (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A2&!B2)]
+    sky130_fd_sc_hd__a22oi_2:
+        functions: [Y = (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A2&!B2)]
+    sky130_fd_sc_hd__a22oi_4:
+        functions: [Y = (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A2&!B2)]
+    sky130_fd_sc_hd__a2bb2o_1:
+        functions: [X = (B1&B2) | (!A1_N&!A2_N)]
+    sky130_fd_sc_hd__a2bb2o_2:
+        functions: [X = (B1&B2) | (!A1_N&!A2_N)]
+    sky130_fd_sc_hd__a2bb2o_4:
+        functions: [X = (B1&B2) | (!A1_N&!A2_N)]
+    sky130_fd_sc_hd__a2bb2oi_1:
+        functions: [Y = (A1_N&!B1) | (A1_N&!B2) | (A2_N&!B1) | (A2_N&!B2)]
+    sky130_fd_sc_hd__a2bb2oi_2:
+        functions: [Y = (A1_N&!B1) | (A1_N&!B2) | (A2_N&!B1) | (A2_N&!B2)]
+    sky130_fd_sc_hd__a2bb2oi_4:
+        functions: [Y = (A1_N&!B1) | (A1_N&!B2) | (A2_N&!B1) | (A2_N&!B2)]
+    sky130_fd_sc_hd__a311o_1:
+        functions: [X = (A1&A2&A3) | (B1) | (C1)]
+    sky130_fd_sc_hd__a311o_2:
+        functions: [X = (A1&A2&A3) | (B1) | (C1)]
+    sky130_fd_sc_hd__a311o_4:
+        functions: [X = (A1&A2&A3) | (B1) | (C1)]
+    sky130_fd_sc_hd__a311oi_1:
+        functions: [Y = (!A1&!B1&!C1) | (!A2&!B1&!C1) | (!A3&!B1&!C1)]
+    sky130_fd_sc_hd__a311oi_2:
+        functions: [Y = (!A1&!B1&!C1) | (!A2&!B1&!C1) | (!A3&!B1&!C1)]
+    sky130_fd_sc_hd__a311oi_4:
+        functions: [Y = (!A1&!B1&!C1) | (!A2&!B1&!C1) | (!A3&!B1&!C1)]
+    sky130_fd_sc_hd__a31o_1:
+        functions: [X = (A1&A2&A3) | (B1)]
+    sky130_fd_sc_hd__a31o_2:
+        functions: [X = (A1&A2&A3) | (B1)]
+    sky130_fd_sc_hd__a31o_4:
+        functions: [X = (A1&A2&A3) | (B1)]
+    sky130_fd_sc_hd__a31oi_1:
+        functions: [Y = (!A1&!B1) | (!A2&!B1) | (!A3&!B1)]
+    sky130_fd_sc_hd__a31oi_2:
+        functions: [Y = (!A1&!B1) | (!A2&!B1) | (!A3&!B1)]
+    sky130_fd_sc_hd__a31oi_4:
+        functions: [Y = (!A1&!B1) | (!A2&!B1) | (!A3&!B1)]
+    sky130_fd_sc_hd__a32o_1:
+        functions: [X = (A1&A2&A3) | (B1&B2)]
+    sky130_fd_sc_hd__a32o_2:
+        functions: [X = (A1&A2&A3) | (B1&B2)]
+    sky130_fd_sc_hd__a32o_4:
+        functions: [X = (A1&A2&A3) | (B1&B2)]
+    sky130_fd_sc_hd__a32oi_1:
+        functions: [Y = (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A3&!B1) | (!A2&!B2) | (!A3&!B2)]
+    sky130_fd_sc_hd__a32oi_2:
+        functions: [Y = (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A3&!B1) | (!A2&!B2) | (!A3&!B2)]
+    sky130_fd_sc_hd__a32oi_4:
+        functions: [Y = (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A3&!B1) | (!A2&!B2) | (!A3&!B2)]
+    sky130_fd_sc_hd__a41o_1:
+        functions: [X = (A1&A2&A3&A4) | (B1)]
+    sky130_fd_sc_hd__a41o_2:
+        functions: [X = (A1&A2&A3&A4) | (B1)]
+    sky130_fd_sc_hd__a41o_4:
+        functions: [X = (A1&A2&A3&A4) | (B1)]
+    sky130_fd_sc_hd__a41oi_1:
+        functions: [Y = (!A1&!B1) | (!A2&!B1) | (!A3&!B1) | (!A4&!B1)]
+    sky130_fd_sc_hd__a41oi_2:
+        functions: [Y = (!A1&!B1) | (!A2&!B1) | (!A3&!B1) | (!A4&!B1)]
+    sky130_fd_sc_hd__a41oi_4:
+        functions: [Y = (!A1&!B1) | (!A2&!B1) | (!A3&!B1) | (!A4&!B1)]
+    sky130_fd_sc_hd__and2_0:
+        functions: [X = (A&B)]
+    sky130_fd_sc_hd__and2_1:
+        functions: [X = (A&B)]
+    sky130_fd_sc_hd__and2_2:
+        functions: [X = (A&B)]
+    sky130_fd_sc_hd__and2_4:
+        functions: [X = (A&B)]
+    sky130_fd_sc_hd__and2b_1:
+        functions: [X = (!A_N&B)]
+    sky130_fd_sc_hd__and2b_2:
+        functions: [X = (!A_N&B)]
+    sky130_fd_sc_hd__and2b_4:
+        functions: [X = (!A_N&B)]
+    sky130_fd_sc_hd__and3_1:
+        functions: [X = (A&B&C)]
+    sky130_fd_sc_hd__and3_2:
+        functions: [X = (A&B&C)]
+    sky130_fd_sc_hd__and3_4:
+        functions: [X = (A&B&C)]
+    sky130_fd_sc_hd__and3b_1:
+        functions: [X = (!A_N&B&C)]
+    sky130_fd_sc_hd__and3b_2:
+        functions: [X = (!A_N&B&C)]
+    sky130_fd_sc_hd__and3b_4:
+        functions: [X = (!A_N&B&C)]
+    sky130_fd_sc_hd__and4_1:
+        functions: [X = (A&B&C&D)]
+    sky130_fd_sc_hd__and4_2:
+        functions: [X = (A&B&C&D)]
+    sky130_fd_sc_hd__and4_4:
+        functions: [X = (A&B&C&D)]
+    sky130_fd_sc_hd__and4b_1:
+        functions: [X = (!A_N&B&C&D)]
+    sky130_fd_sc_hd__and4b_2:
+        functions: [X = (!A_N&B&C&D)]
+    sky130_fd_sc_hd__and4b_4:
+        functions: [X = (!A_N&B&C&D)]
+    sky130_fd_sc_hd__and4bb_1:
+        functions: [X = (!A_N&!B_N&C&D)]
+    sky130_fd_sc_hd__and4bb_2:
+        functions: [X = (!A_N&!B_N&C&D)]
+    sky130_fd_sc_hd__and4bb_4:
+        functions: [X = (!A_N&!B_N&C&D)]
+    sky130_fd_sc_hd__buf_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__buf_12:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__buf_16:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__buf_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__buf_4:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__buf_6:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__buf_8:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__bufbuf_16:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__bufbuf_8:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__bufinv_16:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__bufinv_8:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__clkbuf_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkbuf_16:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkbuf_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkbuf_4:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkbuf_8:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkdlybuf4s15_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkdlybuf4s15_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkdlybuf4s18_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkdlybuf4s18_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkdlybuf4s25_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkdlybuf4s25_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkdlybuf4s50_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkdlybuf4s50_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__clkinv_1:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__clkinv_16:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__clkinv_2:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__clkinv_4:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__clkinv_8:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__clkinvlp_2:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__clkinvlp_4:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__conb_1:
+        functions:
+            - HI = 1
+            - LO = 0
+    sky130_fd_sc_hd__dfbbn_1:
+        clock: negedge CLK_N
+        reset: !RESET_B
+        set: !SET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfbbn_2:
+        clock: negedge CLK_N
+        reset: !RESET_B
+        set: !SET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfbbp_1:
+        clock: posedge CLK
+        reset: !RESET_B
+        set: !SET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfrbp_1:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfrbp_2:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfrtn_1:
+        clock: negedge CLK_N
+        reset: !RESET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfrtp_1:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfrtp_2:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfrtp_4:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfsbp_1:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfsbp_2:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfstp_1:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfstp_2:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfstp_4:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfxbp_1:
+        clock: posedge CLK
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfxbp_2:
+        clock: posedge CLK
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dfxtp_1:
+        clock: posedge CLK
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfxtp_2:
+        clock: posedge CLK
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dfxtp_4:
+        clock: posedge CLK
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlrbn_1:
+        reset: !RESET_B
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dlrbn_2:
+        reset: !RESET_B
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dlrbp_1:
+        reset: !RESET_B
+        enable: GATE
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dlrbp_2:
+        reset: !RESET_B
+        enable: GATE
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dlrtn_1:
+        reset: !RESET_B
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlrtn_2:
+        reset: !RESET_B
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlrtn_4:
+        reset: !RESET_B
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlrtp_1:
+        reset: !RESET_B
+        enable: GATE
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlrtp_2:
+        reset: !RESET_B
+        enable: GATE
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlrtp_4:
+        reset: !RESET_B
+        enable: GATE
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlxbn_1:
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dlxbn_2:
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dlxbp_1:
+        enable: GATE
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__dlxtn_1:
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlxtn_2:
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlxtn_4:
+        enable: !GATE_N
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlxtp_1:
+        enable: GATE
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__dlygate4sd1_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__dlygate4sd2_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__dlygate4sd3_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__dlymetal6s2s_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__dlymetal6s4s_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__dlymetal6s6s_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__ebufn_1:
+        functions: [Z = (A)]
+    sky130_fd_sc_hd__ebufn_2:
+        functions: [Z = (A)]
+    sky130_fd_sc_hd__ebufn_4:
+        functions: [Z = (A)]
+    sky130_fd_sc_hd__ebufn_8:
+        functions: [Z = (A)]
+    sky130_fd_sc_hd__edfxbp_1:
+        clock: posedge CLK
+        state:
+            - IQ = (D&DE) | (IQ&!DE)
+            - IQ_N = !((D&DE) | (IQ&!DE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__edfxtp_1:
+        clock: posedge CLK
+        state:
+            - IQ = (D&DE) | (IQ&!DE)
+            - IQ_N = !((D&DE) | (IQ&!DE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__einvn_0:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__einvn_1:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__einvn_2:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__einvn_4:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__einvn_8:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__einvp_1:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__einvp_2:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__einvp_4:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__einvp_8:
+        functions: [Z = (!A)]
+    sky130_fd_sc_hd__fa_1:
+        functions:
+            - COUT = (A&B) | (A&CIN) | (B&CIN)
+            - SUM = (A&!B&!CIN) | (!A&B&!CIN) | (!A&!B&CIN) | (A&B&CIN)
+    sky130_fd_sc_hd__fa_2:
+        functions:
+            - COUT = (A&B) | (A&CIN) | (B&CIN)
+            - SUM = (A&!B&!CIN) | (!A&B&!CIN) | (!A&!B&CIN) | (A&B&CIN)
+    sky130_fd_sc_hd__fa_4:
+        functions:
+            - COUT = (A&B) | (A&CIN) | (B&CIN)
+            - SUM = (A&!B&!CIN) | (!A&B&!CIN) | (!A&!B&CIN) | (A&B&CIN)
+    sky130_fd_sc_hd__fah_1:
+        functions:
+            - COUT = (A&B) | (A&CI) | (B&CI)
+            - SUM = (A&!B&!CI) | (!A&B&!CI) | (!A&!B&CI) | (A&B&CI)
+    sky130_fd_sc_hd__fahcin_1:
+        functions:
+            - COUT = (A&!CIN) | (A&B) | (B&!CIN)
+            - SUM = (!A&!B&!CIN) | (A&B&!CIN) | (A&!B&CIN) | (!A&B&CIN)
+    sky130_fd_sc_hd__fahcon_1:
+        functions:
+            - COUT_N = (!A&!CI) | (!A&!B) | (!B&!CI)
+            - SUM = (A&!B&!CI) | (!A&B&!CI) | (!A&!B&CI) | (A&B&CI)
+    sky130_fd_sc_hd__ha_1:
+        functions:
+            - COUT = (A&B)
+            - SUM = (A&!B) | (!A&B)
+    sky130_fd_sc_hd__ha_2:
+        functions:
+            - COUT = (A&B)
+            - SUM = (A&!B) | (!A&B)
+    sky130_fd_sc_hd__ha_4:
+        functions:
+            - COUT = (A&B)
+            - SUM = (A&!B) | (!A&B)
+    sky130_fd_sc_hd__inv_1:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__inv_12:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__inv_16:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__inv_2:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__inv_4:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__inv_6:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__inv_8:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__lpflow_clkbufkapwr_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_clkbufkapwr_16:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_clkbufkapwr_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_clkbufkapwr_4:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_clkbufkapwr_8:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_clkinvkapwr_1:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__lpflow_clkinvkapwr_16:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__lpflow_clkinvkapwr_2:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__lpflow_clkinvkapwr_4:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__lpflow_clkinvkapwr_8:
+        functions: [Y = (!A)]
+    sky130_fd_sc_hd__lpflow_inputiso0n_1:
+        functions: [X = (SLEEP_B&A)]
+    sky130_fd_sc_hd__lpflow_inputiso0p_1:
+        functions: [X = (!SLEEP&A)]
+    sky130_fd_sc_hd__lpflow_inputiso1n_1:
+        functions: [X = (A) | (!SLEEP_B)]
+    sky130_fd_sc_hd__lpflow_inputiso1p_1:
+        functions: [X = (A) | (SLEEP)]
+    sky130_fd_sc_hd__lpflow_inputisolatch_1:
+        enable: SLEEP_B
+        state:
+            - IQ = D
+            - IQ_N = !(D)
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__lpflow_isobufsrc_1:
+        functions: [X = (A&!SLEEP)]
+    sky130_fd_sc_hd__lpflow_isobufsrc_16:
+        functions: [X = (A&!SLEEP)]
+    sky130_fd_sc_hd__lpflow_isobufsrc_2:
+        functions: [X = (A&!SLEEP)]
+    sky130_fd_sc_hd__lpflow_isobufsrc_4:
+        functions: [X = (A&!SLEEP)]
+    sky130_fd_sc_hd__lpflow_isobufsrc_8:
+        functions: [X = (A&!SLEEP)]
+    sky130_fd_sc_hd__lpflow_isobufsrckapwr_16:
+        functions: [X = (A&!SLEEP)]
+    sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__macro_sparecell:
+        functions: [LO = 0]
+    sky130_fd_sc_hd__maj3_1:
+        functions: [X = (A&B) | (A&C) | (B&C)]
+    sky130_fd_sc_hd__maj3_2:
+        functions: [X = (A&B) | (A&C) | (B&C)]
+    sky130_fd_sc_hd__maj3_4:
+        functions: [X = (A&B) | (A&C) | (B&C)]
+    sky130_fd_sc_hd__mux2_1:
+        functions: [X = (A0&!S) | (A1&S)]
+    sky130_fd_sc_hd__mux2_2:
+        functions: [X = (A0&!S) | (A1&S)]
+    sky130_fd_sc_hd__mux2_4:
+        functions: [X = (A0&!S) | (A1&S)]
+    sky130_fd_sc_hd__mux2_8:
+        functions: [X = (A0&!S) | (A1&S)]
+    sky130_fd_sc_hd__mux2i_1:
+        functions: [Y = (!A0&!S) | (!A1&S)]
+    sky130_fd_sc_hd__mux2i_2:
+        functions: [Y = (!A0&!S) | (!A1&S)]
+    sky130_fd_sc_hd__mux2i_4:
+        functions: [Y = (!A0&!S) | (!A1&S)]
+    sky130_fd_sc_hd__mux4_1:
+        functions: [X = (A0&!S0&!S1) | (A1&S0&!S1) | (A2&!S0&S1) | (A3&S0&S1)]
+    sky130_fd_sc_hd__mux4_2:
+        functions: [X = (A0&!S0&!S1) | (A1&S0&!S1) | (A2&!S0&S1) | (A3&S0&S1)]
+    sky130_fd_sc_hd__mux4_4:
+        functions: [X = (A0&!S0&!S1) | (A1&S0&!S1) | (A2&!S0&S1) | (A3&S0&S1)]
+    sky130_fd_sc_hd__nand2_1:
+        functions: [Y = (!A) | (!B)]
+    sky130_fd_sc_hd__nand2_2:
+        functions: [Y = (!A) | (!B)]
+    sky130_fd_sc_hd__nand2_4:
+        functions: [Y = (!A) | (!B)]
+    sky130_fd_sc_hd__nand2_8:
+        functions: [Y = (!A) | (!B)]
+    sky130_fd_sc_hd__nand2b_1:
+        functions: [Y = (A_N) | (!B)]
+    sky130_fd_sc_hd__nand2b_2:
+        functions: [Y = (A_N) | (!B)]
+    sky130_fd_sc_hd__nand2b_4:
+        functions: [Y = (A_N) | (!B)]
+    sky130_fd_sc_hd__nand3_1:
+        functions: [Y = (!A) | (!B) | (!C)]
+    sky130_fd_sc_hd__nand3_2:
+        functions: [Y = (!A) | (!B) | (!C)]
+    sky130_fd_sc_hd__nand3_4:
+        functions: [Y = (!A) | (!B) | (!C)]
+    sky130_fd_sc_hd__nand3b_1:
+        functions: [Y = (A_N) | (!B) | (!C)]
+    sky130_fd_sc_hd__nand3b_2:
+        functions: [Y = (A_N) | (!B) | (!C)]
+    sky130_fd_sc_hd__nand3b_4:
+        functions: [Y = (A_N) | (!B) | (!C)]
+    sky130_fd_sc_hd__nand4_1:
+        functions: [Y = (!A) | (!B) | (!C) | (!D)]
+    sky130_fd_sc_hd__nand4_2:
+        functions: [Y = (!A) | (!B) | (!C) | (!D)]
+    sky130_fd_sc_hd__nand4_4:
+        functions: [Y = (!A) | (!B) | (!C) | (!D)]
+    sky130_fd_sc_hd__nand4b_1:
+        functions: [Y = (A_N) | (!B) | (!C) | (!D)]
+    sky130_fd_sc_hd__nand4b_2:
+        functions: [Y = (A_N) | (!B) | (!C) | (!D)]
+    sky130_fd_sc_hd__nand4b_4:
+        functions: [Y = (A_N) | (!B) | (!C) | (!D)]
+    sky130_fd_sc_hd__nand4bb_1:
+        functions: [Y = (A_N) | (B_N) | (!C) | (!D)]
+    sky130_fd_sc_hd__nand4bb_2:
+        functions: [Y = (A_N) | (B_N) | (!C) | (!D)]
+    sky130_fd_sc_hd__nand4bb_4:
+        functions: [Y = (A_N) | (B_N) | (!C) | (!D)]
+    sky130_fd_sc_hd__nor2_1:
+        functions: [Y = (!A&!B)]
+    sky130_fd_sc_hd__nor2_2:
+        functions: [Y = (!A&!B)]
+    sky130_fd_sc_hd__nor2_4:
+        functions: [Y = (!A&!B)]
+    sky130_fd_sc_hd__nor2_8:
+        functions: [Y = (!A&!B)]
+    sky130_fd_sc_hd__nor2b_1:
+        functions: [Y = (!A&B_N)]
+    sky130_fd_sc_hd__nor2b_2:
+        functions: [Y = (!A&B_N)]
+    sky130_fd_sc_hd__nor2b_4:
+        functions: [Y = (!A&B_N)]
+    sky130_fd_sc_hd__nor3_1:
+        functions: [Y = (!A&!B&!C)]
+    sky130_fd_sc_hd__nor3_2:
+        functions: [Y = (!A&!B&!C)]
+    sky130_fd_sc_hd__nor3_4:
+        functions: [Y = (!A&!B&!C)]
+    sky130_fd_sc_hd__nor3b_1:
+        functions: [Y = (!A&!B&C_N)]
+    sky130_fd_sc_hd__nor3b_2:
+        functions: [Y = (!A&!B&C_N)]
+    sky130_fd_sc_hd__nor3b_4:
+        functions: [Y = (!A&!B&C_N)]
+    sky130_fd_sc_hd__nor4_1:
+        functions: [Y = (!A&!B&!C&!D)]
+    sky130_fd_sc_hd__nor4_2:
+        functions: [Y = (!A&!B&!C&!D)]
+    sky130_fd_sc_hd__nor4_4:
+        functions: [Y = (!A&!B&!C&!D)]
+    sky130_fd_sc_hd__nor4b_1:
+        functions: [Y = (!A&!B&!C&D_N)]
+    sky130_fd_sc_hd__nor4b_2:
+        functions: [Y = (!A&!B&!C&D_N)]
+    sky130_fd_sc_hd__nor4b_4:
+        functions: [Y = (!A&!B&!C&D_N)]
+    sky130_fd_sc_hd__nor4bb_1:
+        functions: [Y = (!A&!B&C_N&D_N)]
+    sky130_fd_sc_hd__nor4bb_2:
+        functions: [Y = (!A&!B&C_N&D_N)]
+    sky130_fd_sc_hd__nor4bb_4:
+        functions: [Y = (!A&!B&C_N&D_N)]
+    sky130_fd_sc_hd__o2111a_1:
+        functions: [X = (A1&B1&C1&D1) | (A2&B1&C1&D1)]
+    sky130_fd_sc_hd__o2111a_2:
+        functions: [X = (A1&B1&C1&D1) | (A2&B1&C1&D1)]
+    sky130_fd_sc_hd__o2111a_4:
+        functions: [X = (A1&B1&C1&D1) | (A2&B1&C1&D1)]
+    sky130_fd_sc_hd__o2111ai_1:
+        functions: [Y = (!A1&!A2) | (!B1) | (!C1) | (!D1)]
+    sky130_fd_sc_hd__o2111ai_2:
+        functions: [Y = (!A1&!A2) | (!B1) | (!C1) | (!D1)]
+    sky130_fd_sc_hd__o2111ai_4:
+        functions: [Y = (!A1&!A2) | (!B1) | (!C1) | (!D1)]
+    sky130_fd_sc_hd__o211a_1:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1)]
+    sky130_fd_sc_hd__o211a_2:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1)]
+    sky130_fd_sc_hd__o211a_4:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1)]
+    sky130_fd_sc_hd__o211ai_1:
+        functions: [Y = (!A1&!A2) | (!B1) | (!C1)]
+    sky130_fd_sc_hd__o211ai_2:
+        functions: [Y = (!A1&!A2) | (!B1) | (!C1)]
+    sky130_fd_sc_hd__o211ai_4:
+        functions: [Y = (!A1&!A2) | (!B1) | (!C1)]
+    sky130_fd_sc_hd__o21a_1:
+        functions: [X = (A1&B1) | (A2&B1)]
+    sky130_fd_sc_hd__o21a_2:
+        functions: [X = (A1&B1) | (A2&B1)]
+    sky130_fd_sc_hd__o21a_4:
+        functions: [X = (A1&B1) | (A2&B1)]
+    sky130_fd_sc_hd__o21ai_0:
+        functions: [Y = (!A1&!A2) | (!B1)]
+    sky130_fd_sc_hd__o21ai_1:
+        functions: [Y = (!A1&!A2) | (!B1)]
+    sky130_fd_sc_hd__o21ai_2:
+        functions: [Y = (!A1&!A2) | (!B1)]
+    sky130_fd_sc_hd__o21ai_4:
+        functions: [Y = (!A1&!A2) | (!B1)]
+    sky130_fd_sc_hd__o21ba_1:
+        functions: [X = (A1&!B1_N) | (A2&!B1_N)]
+    sky130_fd_sc_hd__o21ba_2:
+        functions: [X = (A1&!B1_N) | (A2&!B1_N)]
+    sky130_fd_sc_hd__o21ba_4:
+        functions: [X = (A1&!B1_N) | (A2&!B1_N)]
+    sky130_fd_sc_hd__o21bai_1:
+        functions: [Y = (!A1&!A2) | (B1_N)]
+    sky130_fd_sc_hd__o21bai_2:
+        functions: [Y = (!A1&!A2) | (B1_N)]
+    sky130_fd_sc_hd__o21bai_4:
+        functions: [Y = (!A1&!A2) | (B1_N)]
+    sky130_fd_sc_hd__o221a_1:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1) | (A1&B2&C1) | (A2&B2&C1)]
+    sky130_fd_sc_hd__o221a_2:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1) | (A1&B2&C1) | (A2&B2&C1)]
+    sky130_fd_sc_hd__o221a_4:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1) | (A1&B2&C1) | (A2&B2&C1)]
+    sky130_fd_sc_hd__o221ai_1:
+        functions: [Y = (!B1&!B2) | (!A1&!A2) | (!C1)]
+    sky130_fd_sc_hd__o221ai_2:
+        functions: [Y = (!B1&!B2) | (!A1&!A2) | (!C1)]
+    sky130_fd_sc_hd__o221ai_4:
+        functions: [Y = (!B1&!B2) | (!A1&!A2) | (!C1)]
+    sky130_fd_sc_hd__o22a_1:
+        functions: [X = (A1&B1) | (A2&B1) | (A1&B2) | (A2&B2)]
+    sky130_fd_sc_hd__o22a_2:
+        functions: [X = (A1&B1) | (A2&B1) | (A1&B2) | (A2&B2)]
+    sky130_fd_sc_hd__o22a_4:
+        functions: [X = (A1&B1) | (A2&B1) | (A1&B2) | (A2&B2)]
+    sky130_fd_sc_hd__o22ai_1:
+        functions: [Y = (!B1&!B2) | (!A1&!A2)]
+    sky130_fd_sc_hd__o22ai_2:
+        functions: [Y = (!B1&!B2) | (!A1&!A2)]
+    sky130_fd_sc_hd__o22ai_4:
+        functions: [Y = (!B1&!B2) | (!A1&!A2)]
+    sky130_fd_sc_hd__o2bb2a_1:
+        functions: [X = (!A1_N&B1) | (!A2_N&B1) | (!A1_N&B2) | (!A2_N&B2)]
+    sky130_fd_sc_hd__o2bb2a_2:
+        functions: [X = (!A1_N&B1) | (!A2_N&B1) | (!A1_N&B2) | (!A2_N&B2)]
+    sky130_fd_sc_hd__o2bb2a_4:
+        functions: [X = (!A1_N&B1) | (!A2_N&B1) | (!A1_N&B2) | (!A2_N&B2)]
+    sky130_fd_sc_hd__o2bb2ai_1:
+        functions: [Y = (!B1&!B2) | (A1_N&A2_N)]
+    sky130_fd_sc_hd__o2bb2ai_2:
+        functions: [Y = (!B1&!B2) | (A1_N&A2_N)]
+    sky130_fd_sc_hd__o2bb2ai_4:
+        functions: [Y = (!B1&!B2) | (A1_N&A2_N)]
+    sky130_fd_sc_hd__o311a_1:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1) | (A3&B1&C1)]
+    sky130_fd_sc_hd__o311a_2:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1) | (A3&B1&C1)]
+    sky130_fd_sc_hd__o311a_4:
+        functions: [X = (A1&B1&C1) | (A2&B1&C1) | (A3&B1&C1)]
+    sky130_fd_sc_hd__o311ai_0:
+        functions: [Y = (!A1&!A2&!A3) | (!B1) | (!C1)]
+    sky130_fd_sc_hd__o311ai_1:
+        functions: [Y = (!A1&!A2&!A3) | (!B1) | (!C1)]
+    sky130_fd_sc_hd__o311ai_2:
+        functions: [Y = (!A1&!A2&!A3) | (!B1) | (!C1)]
+    sky130_fd_sc_hd__o311ai_4:
+        functions: [Y = (!A1&!A2&!A3) | (!B1) | (!C1)]
+    sky130_fd_sc_hd__o31a_1:
+        functions: [X = (A1&B1) | (A2&B1) | (A3&B1)]
+    sky130_fd_sc_hd__o31a_2:
+        functions: [X = (A1&B1) | (A2&B1) | (A3&B1)]
+    sky130_fd_sc_hd__o31a_4:
+        functions: [X = (A1&B1) | (A2&B1) | (A3&B1)]
+    sky130_fd_sc_hd__o31ai_1:
+        functions: [Y = (!A1&!A2&!A3) | (!B1)]
+    sky130_fd_sc_hd__o31ai_2:
+        functions: [Y = (!A1&!A2&!A3) | (!B1)]
+    sky130_fd_sc_hd__o31ai_4:
+        functions: [Y = (!A1&!A2&!A3) | (!B1)]
+    sky130_fd_sc_hd__o32a_1:
+        functions: [X = (A1&B1) | (A1&B2) | (A2&B1) | (A3&B1) | (A2&B2) | (A3&B2)]
+    sky130_fd_sc_hd__o32a_2:
+        functions: [X = (A1&B1) | (A1&B2) | (A2&B1) | (A3&B1) | (A2&B2) | (A3&B2)]
+    sky130_fd_sc_hd__o32a_4:
+        functions: [X = (A1&B1) | (A1&B2) | (A2&B1) | (A3&B1) | (A2&B2) | (A3&B2)]
+    sky130_fd_sc_hd__o32ai_1:
+        functions: [Y = (!A1&!A2&!A3) | (!B1&!B2)]
+    sky130_fd_sc_hd__o32ai_2:
+        functions: [Y = (!A1&!A2&!A3) | (!B1&!B2)]
+    sky130_fd_sc_hd__o32ai_4:
+        functions: [Y = (!A1&!A2&!A3) | (!B1&!B2)]
+    sky130_fd_sc_hd__o41a_1:
+        functions: [X = (A1&B1) | (A2&B1) | (A3&B1) | (A4&B1)]
+    sky130_fd_sc_hd__o41a_2:
+        functions: [X = (A1&B1) | (A2&B1) | (A3&B1) | (A4&B1)]
+    sky130_fd_sc_hd__o41a_4:
+        functions: [X = (A1&B1) | (A2&B1) | (A3&B1) | (A4&B1)]
+    sky130_fd_sc_hd__o41ai_1:
+        functions: [Y = (!A1&!A2&!A3&!A4) | (!B1)]
+    sky130_fd_sc_hd__o41ai_2:
+        functions: [Y = (!A1&!A2&!A3&!A4) | (!B1)]
+    sky130_fd_sc_hd__o41ai_4:
+        functions: [Y = (!A1&!A2&!A3&!A4) | (!B1)]
+    sky130_fd_sc_hd__or2_0:
+        functions: [X = (A) | (B)]
+    sky130_fd_sc_hd__or2_1:
+        functions: [X = (A) | (B)]
+    sky130_fd_sc_hd__or2_2:
+        functions: [X = (A) | (B)]
+    sky130_fd_sc_hd__or2_4:
+        functions: [X = (A) | (B)]
+    sky130_fd_sc_hd__or2b_1:
+        functions: [X = (A) | (!B_N)]
+    sky130_fd_sc_hd__or2b_2:
+        functions: [X = (A) | (!B_N)]
+    sky130_fd_sc_hd__or2b_4:
+        functions: [X = (A) | (!B_N)]
+    sky130_fd_sc_hd__or3_1:
+        functions: [X = (A) | (B) | (C)]
+    sky130_fd_sc_hd__or3_2:
+        functions: [X = (A) | (B) | (C)]
+    sky130_fd_sc_hd__or3_4:
+        functions: [X = (A) | (B) | (C)]
+    sky130_fd_sc_hd__or3b_1:
+        functions: [X = (A) | (B) | (!C_N)]
+    sky130_fd_sc_hd__or3b_2:
+        functions: [X = (A) | (B) | (!C_N)]
+    sky130_fd_sc_hd__or3b_4:
+        functions: [X = (A) | (B) | (!C_N)]
+    sky130_fd_sc_hd__or4_1:
+        functions: [X = (A) | (B) | (C) | (D)]
+    sky130_fd_sc_hd__or4_2:
+        functions: [X = (A) | (B) | (C) | (D)]
+    sky130_fd_sc_hd__or4_4:
+        functions: [X = (A) | (B) | (C) | (D)]
+    sky130_fd_sc_hd__or4b_1:
+        functions: [X = (A) | (B) | (C) | (!D_N)]
+    sky130_fd_sc_hd__or4b_2:
+        functions: [X = (A) | (B) | (C) | (!D_N)]
+    sky130_fd_sc_hd__or4b_4:
+        functions: [X = (A) | (B) | (C) | (!D_N)]
+    sky130_fd_sc_hd__or4bb_1:
+        functions: [X = (A) | (B) | (!C_N) | (!D_N)]
+    sky130_fd_sc_hd__or4bb_2:
+        functions: [X = (A) | (B) | (!C_N) | (!D_N)]
+    sky130_fd_sc_hd__or4bb_4:
+        functions: [X = (A) | (B) | (!C_N) | (!D_N)]
+    sky130_fd_sc_hd__probe_p_8:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__probec_p_8:
+        functions: [X = (A)]
+    sky130_fd_sc_hd__sdfbbn_1:
+        clock: negedge CLK_N
+        reset: !RESET_B
+        set: !SET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfbbn_2:
+        clock: negedge CLK_N
+        reset: !RESET_B
+        set: !SET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfbbp_1:
+        clock: posedge CLK
+        reset: !RESET_B
+        set: !SET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfrbp_1:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfrbp_2:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfrtn_1:
+        clock: negedge CLK_N
+        reset: !RESET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfrtp_1:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfrtp_2:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfrtp_4:
+        clock: posedge CLK
+        reset: !RESET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfsbp_1:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfsbp_2:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfstp_1:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfstp_2:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfstp_4:
+        clock: posedge CLK
+        set: !SET_B
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfxbp_1:
+        clock: posedge CLK
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfxbp_2:
+        clock: posedge CLK
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sdfxtp_1:
+        clock: posedge CLK
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfxtp_2:
+        clock: posedge CLK
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sdfxtp_4:
+        clock: posedge CLK
+        state:
+            - IQ = (D&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sedfxbp_1:
+        clock: posedge CLK
+        state:
+            - IQ = (D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sedfxbp_2:
+        clock: posedge CLK
+        state:
+            - IQ = (D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE))
+        functions:
+            - Q = IQ
+            - Q_N = IQ_N
+    sky130_fd_sc_hd__sedfxtp_1:
+        clock: posedge CLK
+        state:
+            - IQ = (D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sedfxtp_2:
+        clock: posedge CLK
+        state:
+            - IQ = (D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__sedfxtp_4:
+        clock: posedge CLK
+        state:
+            - IQ = (D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE)
+            - IQ_N = !((D&DE&!SCE) | (IQ&!DE&!SCE) | (SCD&SCE))
+        functions: [Q = IQ]
+    sky130_fd_sc_hd__xnor2_1:
+        functions: [Y = (!A&!B) | (A&B)]
+    sky130_fd_sc_hd__xnor2_2:
+        functions: [Y = (!A&!B) | (A&B)]
+    sky130_fd_sc_hd__xnor2_4:
+        functions: [Y = (!A&!B) | (A&B)]
+    sky130_fd_sc_hd__xnor3_1:
+        functions: [X = (!A&!B&!C) | (A&B&!C) | (A&!B&C) | (!A&B&C)]
+    sky130_fd_sc_hd__xnor3_2:
+        functions: [X = (!A&!B&!C) | (A&B&!C) | (A&!B&C) | (!A&B&C)]
+    sky130_fd_sc_hd__xnor3_4:
+        functions: [X = (!A&!B&!C) | (A&B&!C) | (A&!B&C) | (!A&B&C)]
+    sky130_fd_sc_hd__xor2_1:
+        functions: [X = (A&!B) | (!A&B)]
+    sky130_fd_sc_hd__xor2_2:
+        functions: [X = (A&!B) | (!A&B)]
+    sky130_fd_sc_hd__xor2_4:
+        functions: [X = (A&!B) | (!A&B)]
+    sky130_fd_sc_hd__xor3_1:
+        functions: [X = (A&!B&!C) | (!A&B&!C) | (!A&!B&C) | (A&B&C)]
+    sky130_fd_sc_hd__xor3_2:
+        functions: [X = (A&!B&!C) | (!A&B&!C) | (!A&!B&C) | (A&B&C)]
+    sky130_fd_sc_hd__xor3_4:
+        functions: [X = (A&!B&!C) | (!A&B&!C) | (!A&!B&C) | (A&B&C)]
