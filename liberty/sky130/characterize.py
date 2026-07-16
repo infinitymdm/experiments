@@ -39,11 +39,15 @@ def run(config_file):
                     progress_bar.update(1)
 
     # Add LUTs
+    templates = []
     for timing_group in characterizer.library.subgroups_with_name('timing'):
         for lut_group in timing_group.groups.values():
-            characterizer.library.add_group(lut_group.template)
+            templates.append(lut_group.template)
+    for t in templates:
+        characterizer.library.add_group(t)
 
     print(characterizer.library.to_liberty(precision=6))
 
 if __name__ == "__main__":
-    run('sky130_fd_sc_hd__tt_025C_1v80.yaml')
+    with memray.Tracker('tmp/main.bin'):
+        run('sky130_fd_sc_hd__tt_025C_1v80.yaml')
