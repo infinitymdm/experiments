@@ -1,0 +1,25 @@
+settings:
+    lib_name: sky130_fd_sc_hd__ff_n40C_1v95.charlib
+    units:
+        current: mA
+        pulling_resistance: kohm
+    temperature: -40
+    named_nodes:
+        primary_power:
+            name: VPWR
+            voltage: 1.95
+        primary_ground:
+            name: VGND
+        nwell:
+            name: VPB
+            voltage: 1.95
+        pwell:
+            name: VNB
+    cell_defaults:
+        netlist: ~/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+        models:
+            - ~/.ciel/sky130A/libs.tech/ngspice/sky130.lib.spice ff
+            - ./sky130_params.spice
+        data_slews: [0.0100000000, 0.0230505800, 0.0531329300, 0.1224745000, 0.2823108000, 0.6507428000, 1.5000000000]
+        loads: [0.0005000000, 0.0013283360, 0.0035289520, 0.0093752650, 0.0249070000, 0.0661697100, 0.1757912000]
+cells: sky130_fd_sc_hd_cells.yaml
