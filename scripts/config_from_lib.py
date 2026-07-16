@@ -14,6 +14,9 @@ def check_and_add(d, group, key, alt_key=None, edge=False):
                 attr = attr.replace('!', 'negedge ')
             else:
                 attr = f'posedge {attr}'
+        else:
+            if attr.startswith('!'):
+                attr = attr.replace('!', 'not ')
         d[key] = attr
 
 def read_cells_and_functions(libfile):
@@ -75,9 +78,8 @@ def print_as_yaml(obj, indent=0):
         print(f' {str(obj)}', end='')
 
 if __name__ == '__main__':
-    config = {}
-    # lib_path = Path('/home/marcus/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib')
+    lib_path = Path('/home/marcus/.ciel/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib')
     # lib_path = Path('/home/marcus/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__tt_025C_3v30.lib')
-    lib_path = Path('/home/marcus/.ciel/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib')
-    config['cells'] = read_cells_and_functions(lib_path)
+    # lib_path = Path('/home/marcus/.ciel/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib')
+    config = read_cells_and_functions(lib_path)
     print_as_yaml(config)
