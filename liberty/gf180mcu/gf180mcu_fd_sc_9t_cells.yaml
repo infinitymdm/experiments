@@ -1,0 +1,667 @@
+
+gf180mcu_fd_sc_mcu9t5v0__addf_1:
+    functions:
+        - CO = ((A&B)|(A&CI)|(B&CI))
+        - S = (A^B^CI)
+gf180mcu_fd_sc_mcu9t5v0__addf_2:
+    functions:
+        - CO = ((A&B)|(A&CI)|(B&CI))
+        - S = (A^B^CI)
+gf180mcu_fd_sc_mcu9t5v0__addf_4:
+    functions:
+        - CO = ((A&B)|(A&CI)|(B&CI))
+        - S = (A^B^CI)
+gf180mcu_fd_sc_mcu9t5v0__addh_1:
+    functions:
+        - CO = (A&B)
+        - S = (A^B)
+gf180mcu_fd_sc_mcu9t5v0__addh_2:
+    functions:
+        - CO = (A&B)
+        - S = (A^B)
+gf180mcu_fd_sc_mcu9t5v0__addh_4:
+    functions:
+        - CO = (A&B)
+        - S = (A^B)
+gf180mcu_fd_sc_mcu9t5v0__and2_1:
+    functions: [Z = (A1&A2)]
+gf180mcu_fd_sc_mcu9t5v0__and2_2:
+    functions: [Z = (A1&A2)]
+gf180mcu_fd_sc_mcu9t5v0__and2_4:
+    functions: [Z = (A1&A2)]
+gf180mcu_fd_sc_mcu9t5v0__and3_1:
+    functions: [Z = (A1&A2&A3)]
+gf180mcu_fd_sc_mcu9t5v0__and3_2:
+    functions: [Z = (A1&A2&A3)]
+gf180mcu_fd_sc_mcu9t5v0__and3_4:
+    functions: [Z = (A1&A2&A3)]
+gf180mcu_fd_sc_mcu9t5v0__and4_1:
+    functions: [Z = (A1&A2&A3&A4)]
+gf180mcu_fd_sc_mcu9t5v0__and4_2:
+    functions: [Z = (A1&A2&A3&A4)]
+gf180mcu_fd_sc_mcu9t5v0__and4_4:
+    functions: [Z = (A1&A2&A3&A4)]
+gf180mcu_fd_sc_mcu9t5v0__aoi21_1:
+    functions: [ZN = (((!A1)&(!B))|((!A2)&(!B)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi21_2:
+    functions: [ZN = (((!A1)&(!B))|((!A2)&(!B)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi21_4:
+    functions: [ZN = (((!A1)&(!B))|((!A2)&(!B)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi22_1:
+    functions: [ZN = (((!A1)&(!B1))|((!A1)&(!B2))|((!A2)&(!B1))|((!A2)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi22_2:
+    functions: [ZN = (((!A1)&(!B1))|((!A1)&(!B2))|((!A2)&(!B1))|((!A2)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi22_4:
+    functions: [ZN = (((!A1)&(!B1))|((!A1)&(!B2))|((!A2)&(!B1))|((!A2)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi211_1:
+    functions: [ZN = (((!A1)&(!B)&(!C))|((!A2)&(!B)&(!C)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi211_2:
+    functions: [ZN = (((!A1)&(!B)&(!C))|((!A2)&(!B)&(!C)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi211_4:
+    functions: [ZN = (((!A1)&(!B)&(!C))|((!A2)&(!B)&(!C)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi221_1:
+    functions: [ZN = (((!A1)&(!B1)&(!C))|((!A1)&(!B2)&(!C))|((!A2)&(!B1)&(!C))|((!A2)&(!B2)&(!C)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi221_2:
+    functions: [ZN = (((!A1)&(!B1)&(!C))|((!A1)&(!B2)&(!C))|((!A2)&(!B1)&(!C))|((!A2)&(!B2)&(!C)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi221_4:
+    functions: [ZN = (((!A1)&(!B1)&(!C))|((!A1)&(!B2)&(!C))|((!A2)&(!B1)&(!C))|((!A2)&(!B2)&(!C)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi222_1:
+    functions: [ZN = (((!A1)&(!B1)&(!C1))|((!A1)&(!B1)&(!C2))|((!A1)&(!B2)&(!C1))|((!A1)&(!B2)&(!C2))|((!A2)&(!B1)&(!C1))|((!A2)&(!B1)&(!C2))|((!A2)&(!B2)&(!C1))|((!A2)&(!B2)&(!C2)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi222_2:
+    functions: [ZN = (((!A1)&(!B1)&(!C1))|((!A1)&(!B1)&(!C2))|((!A1)&(!B2)&(!C1))|((!A1)&(!B2)&(!C2))|((!A2)&(!B1)&(!C1))|((!A2)&(!B1)&(!C2))|((!A2)&(!B2)&(!C1))|((!A2)&(!B2)&(!C2)))]
+gf180mcu_fd_sc_mcu9t5v0__aoi222_4:
+    functions: [ZN = (((!A1)&(!B1)&(!C1))|((!A1)&(!B1)&(!C2))|((!A1)&(!B2)&(!C1))|((!A1)&(!B2)&(!C2))|((!A2)&(!B1)&(!C1))|((!A2)&(!B1)&(!C2))|((!A2)&(!B2)&(!C1))|((!A2)&(!B2)&(!C2)))]
+gf180mcu_fd_sc_mcu9t5v0__buf_1:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__buf_2:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__buf_3:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__buf_4:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__buf_8:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__buf_12:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__buf_16:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__buf_20:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__bufz_1:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__bufz_2:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__bufz_3:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__bufz_4:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__bufz_8:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__bufz_12:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__bufz_16:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkbuf_1:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkbuf_2:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkbuf_3:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkbuf_4:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkbuf_8:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkbuf_12:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkbuf_16:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkbuf_20:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__clkinv_1:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__clkinv_2:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__clkinv_3:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__clkinv_4:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__clkinv_8:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__clkinv_12:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__clkinv_16:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__clkinv_20:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__dffnq_1:
+    clock: posedge (!CLKN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnq_2:
+    clock: posedge (!CLKN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnq_4:
+    clock: posedge (!CLKN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnrnq_1:
+    clock: posedge (!CLKN)
+    reset: (!RN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnrnq_2:
+    clock: posedge (!CLKN)
+    reset: (!RN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnrnq_4:
+    clock: posedge (!CLKN)
+    reset: (!RN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnrsnq_1:
+    clock: posedge (!CLKN)
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnrsnq_2:
+    clock: posedge (!CLKN)
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnrsnq_4:
+    clock: posedge (!CLKN)
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnsnq_1:
+    clock: posedge (!CLKN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnsnq_2:
+    clock: posedge (!CLKN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffnsnq_4:
+    clock: posedge (!CLKN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffq_1:
+    clock: posedge CLK
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffq_2:
+    clock: posedge CLK
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffq_4:
+    clock: posedge CLK
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffrnq_1:
+    clock: posedge CLK
+    reset: (!RN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffrnq_2:
+    clock: posedge CLK
+    reset: (!RN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffrnq_4:
+    clock: posedge CLK
+    reset: (!RN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffrsnq_1:
+    clock: posedge CLK
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffrsnq_2:
+    clock: posedge CLK
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffrsnq_4:
+    clock: posedge CLK
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffsnq_1:
+    clock: posedge CLK
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffsnq_2:
+    clock: posedge CLK
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dffsnq_4:
+    clock: posedge CLK
+    set: (!SETN)
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__dlya_1:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlya_2:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlya_4:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyb_1:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyb_2:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyb_4:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyc_1:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyc_2:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyc_4:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyd_1:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyd_2:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__dlyd_4:
+    functions: [Z = I]
+gf180mcu_fd_sc_mcu9t5v0__inv_1:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__inv_2:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__inv_3:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__inv_4:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__inv_8:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__inv_12:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__inv_16:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__inv_20:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__invz_1:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__invz_2:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__invz_3:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__invz_4:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__invz_8:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__invz_12:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__invz_16:
+    functions: [ZN = (!I)]
+gf180mcu_fd_sc_mcu9t5v0__latq_1:
+    enable: E
+    state:
+        - IQ1 = (!D)
+        - IQN1 = !((!D))
+    functions: [Q = IQN1]
+gf180mcu_fd_sc_mcu9t5v0__latq_2:
+    enable: E
+    state:
+        - IQ1 = (!D)
+        - IQN1 = !((!D))
+    functions: [Q = IQN1]
+gf180mcu_fd_sc_mcu9t5v0__latq_4:
+    enable: E
+    state:
+        - IQ1 = (!D)
+        - IQN1 = !((!D))
+    functions: [Q = IQN1]
+gf180mcu_fd_sc_mcu9t5v0__latrnq_1:
+    reset: (!RN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__latrnq_2:
+    reset: (!RN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__latrnq_4:
+    reset: (!RN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__latrsnq_1:
+    reset: (!RN)
+    set: (!SETN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__latrsnq_2:
+    reset: (!RN)
+    set: (!SETN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__latrsnq_4:
+    reset: (!RN)
+    set: (!SETN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__latsnq_1:
+    set: (!SETN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__latsnq_2:
+    set: (!SETN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__latsnq_4:
+    set: (!SETN)
+    enable: E
+    state:
+        - IQ1 = D
+        - IQN1 = !(D)
+    functions: [Q = IQ2]
+gf180mcu_fd_sc_mcu9t5v0__mux2_1:
+    functions: [Z = ((I0&(!S))|(I1&S))]
+gf180mcu_fd_sc_mcu9t5v0__mux2_2:
+    functions: [Z = ((I0&(!S))|(I1&S))]
+gf180mcu_fd_sc_mcu9t5v0__mux2_4:
+    functions: [Z = ((I0&(!S))|(I1&S))]
+gf180mcu_fd_sc_mcu9t5v0__mux4_1:
+    functions: [Z = ((I0&(!S0)&(!S1))|(I1&S0&(!S1))|(I2&(!S0)&S1)|(I3&S0&S1))]
+gf180mcu_fd_sc_mcu9t5v0__mux4_2:
+    functions: [Z = ((I0&(!S0)&(!S1))|(I1&S0&(!S1))|(I2&(!S0)&S1)|(I3&S0&S1))]
+gf180mcu_fd_sc_mcu9t5v0__mux4_4:
+    functions: [Z = ((I0&(!S0)&(!S1))|(I1&S0&(!S1))|(I2&(!S0)&S1)|(I3&S0&S1))]
+gf180mcu_fd_sc_mcu9t5v0__nand2_1:
+    functions: [ZN = ((!A1)|(!A2))]
+gf180mcu_fd_sc_mcu9t5v0__nand2_2:
+    functions: [ZN = ((!A1)|(!A2))]
+gf180mcu_fd_sc_mcu9t5v0__nand2_4:
+    functions: [ZN = ((!A1)|(!A2))]
+gf180mcu_fd_sc_mcu9t5v0__nand3_1:
+    functions: [ZN = ((!A1)|(!A2)|(!A3))]
+gf180mcu_fd_sc_mcu9t5v0__nand3_2:
+    functions: [ZN = ((!A1)|(!A2)|(!A3))]
+gf180mcu_fd_sc_mcu9t5v0__nand3_4:
+    functions: [ZN = ((!A1)|(!A2)|(!A3))]
+gf180mcu_fd_sc_mcu9t5v0__nand4_1:
+    functions: [ZN = ((!A1)|(!A2)|(!A3)|(!A4))]
+gf180mcu_fd_sc_mcu9t5v0__nand4_2:
+    functions: [ZN = ((!A1)|(!A2)|(!A3)|(!A4))]
+gf180mcu_fd_sc_mcu9t5v0__nand4_4:
+    functions: [ZN = ((!A1)|(!A2)|(!A3)|(!A4))]
+gf180mcu_fd_sc_mcu9t5v0__nor2_1:
+    functions: [ZN = ((!A1)&(!A2))]
+gf180mcu_fd_sc_mcu9t5v0__nor2_2:
+    functions: [ZN = ((!A1)&(!A2))]
+gf180mcu_fd_sc_mcu9t5v0__nor2_4:
+    functions: [ZN = ((!A1)&(!A2))]
+gf180mcu_fd_sc_mcu9t5v0__nor3_1:
+    functions: [ZN = ((!A1)&(!A2)&(!A3))]
+gf180mcu_fd_sc_mcu9t5v0__nor3_2:
+    functions: [ZN = ((!A1)&(!A2)&(!A3))]
+gf180mcu_fd_sc_mcu9t5v0__nor3_4:
+    functions: [ZN = ((!A1)&(!A2)&(!A3))]
+gf180mcu_fd_sc_mcu9t5v0__nor4_1:
+    functions: [ZN = ((!A1)&(!A2)&(!A3)&(!A4))]
+gf180mcu_fd_sc_mcu9t5v0__nor4_2:
+    functions: [ZN = ((!A1)&(!A2)&(!A3)&(!A4))]
+gf180mcu_fd_sc_mcu9t5v0__nor4_4:
+    functions: [ZN = ((!A1)&(!A2)&(!A3)&(!A4))]
+gf180mcu_fd_sc_mcu9t5v0__oai21_1:
+    functions: [ZN = (((!A1)&(!A2))|(!B))]
+gf180mcu_fd_sc_mcu9t5v0__oai21_2:
+    functions: [ZN = (((!A1)&(!A2))|(!B))]
+gf180mcu_fd_sc_mcu9t5v0__oai21_4:
+    functions: [ZN = (((!A1)&(!A2))|(!B))]
+gf180mcu_fd_sc_mcu9t5v0__oai22_1:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__oai22_2:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__oai22_4:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__oai31_1:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|(!B))]
+gf180mcu_fd_sc_mcu9t5v0__oai31_2:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|(!B))]
+gf180mcu_fd_sc_mcu9t5v0__oai31_4:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|(!B))]
+gf180mcu_fd_sc_mcu9t5v0__oai32_1:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|((!B1)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__oai32_2:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|((!B1)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__oai32_4:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|((!B1)&(!B2)))]
+gf180mcu_fd_sc_mcu9t5v0__oai33_1:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|((!B1)&(!B2)&(!B3)))]
+gf180mcu_fd_sc_mcu9t5v0__oai33_2:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|((!B1)&(!B2)&(!B3)))]
+gf180mcu_fd_sc_mcu9t5v0__oai33_4:
+    functions: [ZN = (((!A1)&(!A2)&(!A3))|((!B1)&(!B2)&(!B3)))]
+gf180mcu_fd_sc_mcu9t5v0__oai211_1:
+    functions: [ZN = (((!A1)&(!A2))|(!B)|(!C))]
+gf180mcu_fd_sc_mcu9t5v0__oai211_2:
+    functions: [ZN = (((!A1)&(!A2))|(!B)|(!C))]
+gf180mcu_fd_sc_mcu9t5v0__oai211_4:
+    functions: [ZN = (((!A1)&(!A2))|(!B)|(!C))]
+gf180mcu_fd_sc_mcu9t5v0__oai221_1:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2))|(!C))]
+gf180mcu_fd_sc_mcu9t5v0__oai221_2:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2))|(!C))]
+gf180mcu_fd_sc_mcu9t5v0__oai221_4:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2))|(!C))]
+gf180mcu_fd_sc_mcu9t5v0__oai222_1:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2))|((!C1)&(!C2)))]
+gf180mcu_fd_sc_mcu9t5v0__oai222_2:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2))|((!C1)&(!C2)))]
+gf180mcu_fd_sc_mcu9t5v0__oai222_4:
+    functions: [ZN = (((!A1)&(!A2))|((!B1)&(!B2))|((!C1)&(!C2)))]
+gf180mcu_fd_sc_mcu9t5v0__or2_1:
+    functions: [Z = (A1|A2)]
+gf180mcu_fd_sc_mcu9t5v0__or2_2:
+    functions: [Z = (A1|A2)]
+gf180mcu_fd_sc_mcu9t5v0__or2_4:
+    functions: [Z = (A1|A2)]
+gf180mcu_fd_sc_mcu9t5v0__or3_1:
+    functions: [Z = (A1|A2|A3)]
+gf180mcu_fd_sc_mcu9t5v0__or3_2:
+    functions: [Z = (A1|A2|A3)]
+gf180mcu_fd_sc_mcu9t5v0__or3_4:
+    functions: [Z = (A1|A2|A3)]
+gf180mcu_fd_sc_mcu9t5v0__or4_1:
+    functions: [Z = (A1|A2|A3|A4)]
+gf180mcu_fd_sc_mcu9t5v0__or4_2:
+    functions: [Z = (A1|A2|A3|A4)]
+gf180mcu_fd_sc_mcu9t5v0__or4_4:
+    functions: [Z = (A1|A2|A3|A4)]
+gf180mcu_fd_sc_mcu9t5v0__sdffq_1:
+    clock: posedge CLK
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffq_2:
+    clock: posedge CLK
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffq_4:
+    clock: posedge CLK
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffrnq_1:
+    clock: posedge CLK
+    reset: (!RN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffrnq_2:
+    clock: posedge CLK
+    reset: (!RN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffrnq_4:
+    clock: posedge CLK
+    reset: (!RN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffrsnq_1:
+    clock: posedge CLK
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffrsnq_2:
+    clock: posedge CLK
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffrsnq_4:
+    clock: posedge CLK
+    reset: (!RN)
+    set: (!SETN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffsnq_1:
+    clock: posedge CLK
+    set: (!SETN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffsnq_2:
+    clock: posedge CLK
+    set: (!SETN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__sdffsnq_4:
+    clock: posedge CLK
+    set: (!SETN)
+    state:
+        - IQ1 = ((D&(!SE))|(SE&SI))
+        - IQN1 = !(((D&(!SE))|(SE&SI)))
+    functions: [Q = IQ1]
+gf180mcu_fd_sc_mcu9t5v0__tieh:
+    functions: [Z = 1]
+gf180mcu_fd_sc_mcu9t5v0__tiel:
+    functions: [ZN = 0]
+gf180mcu_fd_sc_mcu9t5v0__xnor2_1:
+    functions: [ZN = (!(A1^A2))]
+gf180mcu_fd_sc_mcu9t5v0__xnor2_2:
+    functions: [ZN = (!(A1^A2))]
+gf180mcu_fd_sc_mcu9t5v0__xnor2_4:
+    functions: [ZN = (!(A1^A2))]
+gf180mcu_fd_sc_mcu9t5v0__xnor3_1:
+    functions: [ZN = (!(A1^A2^A3))]
+gf180mcu_fd_sc_mcu9t5v0__xnor3_2:
+    functions: [ZN = (!(A1^A2^A3))]
+gf180mcu_fd_sc_mcu9t5v0__xnor3_4:
+    functions: [ZN = (!(A1^A2^A3))]
+gf180mcu_fd_sc_mcu9t5v0__xor2_1:
+    functions: [Z = (A1^A2)]
+gf180mcu_fd_sc_mcu9t5v0__xor2_2:
+    functions: [Z = (A1^A2)]
+gf180mcu_fd_sc_mcu9t5v0__xor2_4:
+    functions: [Z = (A1^A2)]
+gf180mcu_fd_sc_mcu9t5v0__xor3_1:
+    functions: [Z = (A1^A2^A3)]
+gf180mcu_fd_sc_mcu9t5v0__xor3_2:
+    functions: [Z = (A1^A2^A3)]
+gf180mcu_fd_sc_mcu9t5v0__xor3_4:
+    functions: [Z = (A1^A2^A3)]

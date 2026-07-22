@@ -1,0 +1,233 @@
+
+sg13g2_a21o_1:
+    functions: [X = ((A1*A2)+B1)]
+sg13g2_a21o_2:
+    functions: [X = ((A1*A2)+B1)]
+sg13g2_a21oi_1:
+    functions: [Y = !((A1*A2)+B1)]
+sg13g2_a21oi_2:
+    functions: [Y = !((A1*A2)+B1)]
+sg13g2_a221oi_1:
+    functions: [Y = !((A1*A2)+(B1*B2)+C1)]
+sg13g2_a22oi_1:
+    functions: [Y = !((A1*A2)+(B1*B2))]
+sg13g2_and2_1:
+    functions: [X = (A*B)]
+sg13g2_and2_2:
+    functions: [X = (A*B)]
+sg13g2_and3_1:
+    functions: [X = (A*B*C)]
+sg13g2_and3_2:
+    functions: [X = (A*B*C)]
+sg13g2_and4_1:
+    functions: [X = (A*B*C*D)]
+sg13g2_and4_2:
+    functions: [X = (A*B*C*D)]
+sg13g2_buf_1:
+    functions: [X = A]
+sg13g2_buf_16:
+    functions: [X = A]
+sg13g2_buf_2:
+    functions: [X = A]
+sg13g2_buf_4:
+    functions: [X = A]
+sg13g2_buf_8:
+    functions: [X = A]
+sg13g2_dfrbp_1:
+    clock: posedge CLK
+    reset: not RESET_B
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions:
+        - Q = IQ
+        - Q_N = IQN
+sg13g2_dfrbp_2:
+    clock: posedge CLK
+    reset: not RESET_B
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions:
+        - Q = IQ
+        - Q_N = IQN
+sg13g2_dfrbpq_1:
+    clock: posedge CLK
+    reset: not RESET_B
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions: [Q = IQ]
+sg13g2_dfrbpq_2:
+    clock: posedge CLK
+    reset: not RESET_B
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions: [Q = IQ]
+sg13g2_dlhq_1:
+    enable: GATE
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions: [Q = IQ]
+sg13g2_dlhr_1:
+    reset: not RESET_B
+    enable: GATE
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions:
+        - Q = IQ
+        - Q_N = IQN
+sg13g2_dlhrq_1:
+    reset: not RESET_B
+    enable: GATE
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions: [Q = IQ]
+sg13g2_dllr_1:
+    reset: not RESET_B
+    enable: not GATE_N
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions:
+        - Q = IQ
+        - Q_N = IQN
+sg13g2_dllrq_1:
+    reset: not RESET_B
+    enable: not GATE_N
+    state:
+        - IQ = D
+        - IQN = !(D)
+    functions: [Q = IQ]
+sg13g2_dlygate4sd1_1:
+    functions: [X = A]
+sg13g2_dlygate4sd2_1:
+    functions: [X = A]
+sg13g2_dlygate4sd3_1:
+    functions: [X = A]
+sg13g2_ebufn_2:
+    functions: [Z = A]
+sg13g2_ebufn_4:
+    functions: [Z = A]
+sg13g2_ebufn_8:
+    functions: [Z = A]
+sg13g2_einvn_2:
+    functions: [Z = !(A)]
+sg13g2_einvn_4:
+    functions: [Z = !(A)]
+sg13g2_einvn_8:
+    functions: [Z = !(A)]
+sg13g2_inv_1:
+    functions: [Y = !(A)]
+sg13g2_inv_16:
+    functions: [Y = !(A)]
+sg13g2_inv_2:
+    functions: [Y = !(A)]
+sg13g2_inv_4:
+    functions: [Y = !(A)]
+sg13g2_inv_8:
+    functions: [Y = !(A)]
+sg13g2_mux2_1:
+    functions: [X = (!S*A0)+(S*A1)]
+sg13g2_mux2_2:
+    functions: [X = (!S*A0)+(S*A1)]
+sg13g2_mux4_1:
+    functions: [X = (A0*(!S0*!S1))+(A1*(S0*!S1))+(A2*(!S0*S1))+(A3*(S0*S1))]
+sg13g2_nand2_1:
+    functions: [Y = !(A*B)]
+sg13g2_nand2_2:
+    functions: [Y = !(A*B)]
+sg13g2_nand2b_1:
+    functions: [Y = !(!A_N*B)]
+sg13g2_nand2b_2:
+    functions: [Y = !(!A_N*B)]
+sg13g2_nand3_1:
+    functions: [Y = !(A*B*C)]
+sg13g2_nand3b_1:
+    functions: [Y = !(!A_N*B*C)]
+sg13g2_nand4_1:
+    functions: [Y = !(A*B*C*D)]
+sg13g2_nor2_1:
+    functions: [Y = !(A+B)]
+sg13g2_nor2_2:
+    functions: [Y = !(A+B)]
+sg13g2_nor2b_1:
+    functions: [Y = !(A+!B_N)]
+sg13g2_nor2b_2:
+    functions: [Y = !(A+!B_N)]
+sg13g2_nor3_1:
+    functions: [Y = !(A+B+C)]
+sg13g2_nor3_2:
+    functions: [Y = !(A+B+C)]
+sg13g2_nor4_1:
+    functions: [Y = !(A+B+C+D)]
+sg13g2_nor4_2:
+    functions: [Y = !(A+B+C+D)]
+sg13g2_o21ai_1:
+    functions: [Y = !((A1+A2)*B1)]
+sg13g2_or2_1:
+    functions: [X = (A+B)]
+sg13g2_or2_2:
+    functions: [X = (A+B)]
+sg13g2_or3_1:
+    functions: [X = (A+B+C)]
+sg13g2_or3_2:
+    functions: [X = (A+B+C)]
+sg13g2_or4_1:
+    functions: [X = (A+B+C+D)]
+sg13g2_or4_2:
+    functions: [X = (A+B+C+D)]
+sg13g2_sdfbbp_1:
+    clock: posedge CLK
+    reset: not RESET_B
+    set: not SET_B
+    state:
+        - IQ = (SCE*SCD)+(!SCE*D)
+        - IQN = !((SCE*SCD)+(!SCE*D))
+    functions:
+        - Q = IQ
+        - Q_N = IQN
+sg13g2_sdfrbp_1:
+    clock: posedge CLK
+    reset: not RESET_B
+    state:
+        - IQ = (SCE*SCD)+(!SCE*D)
+        - IQN = !((SCE*SCD)+(!SCE*D))
+    functions:
+        - Q = IQ
+        - Q_N = IQN
+sg13g2_sdfrbp_2:
+    clock: posedge CLK
+    reset: not RESET_B
+    state:
+        - IQ = (SCE*SCD)+(!SCE*D)
+        - IQN = !((SCE*SCD)+(!SCE*D))
+    functions:
+        - Q = IQ
+        - Q_N = IQN
+sg13g2_sdfrbpq_1:
+    clock: posedge CLK
+    reset: not RESET_B
+    state:
+        - IQ = (SCE*SCD)+(!SCE*D)
+        - IQN = !((SCE*SCD)+(!SCE*D))
+    functions: [Q = IQ]
+sg13g2_sdfrbpq_2:
+    clock: posedge CLK
+    reset: not RESET_B
+    state:
+        - IQ = (SCE*SCD)+(!SCE*D)
+        - IQN = !((SCE*SCD)+(!SCE*D))
+    functions: [Q = IQ]
+sg13g2_tiehi:
+    functions: [L_HI = 1]
+sg13g2_tielo:
+    functions: [L_LO = 0]
+sg13g2_xnor2_1:
+    functions: [Y = !(A^B)]
+sg13g2_xor2_1:
+    functions: [X = (A^B)]
