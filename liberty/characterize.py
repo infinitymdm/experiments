@@ -7,6 +7,7 @@ import os
 import pickle
 
 def run(config_file):
+    print(f'Running config "{config_file}"')
     workfiles = []
     config = utils.find_config(config_file)
 
@@ -15,6 +16,7 @@ def run(config_file):
 
         # Build characterizer and load the cell
         characterizer = Characterizer(**config['settings'])
+        characterizer.settings.jobs = 6
         try:
             characterizer.add_cell(name, cell_config)
         except ValueError as e:
