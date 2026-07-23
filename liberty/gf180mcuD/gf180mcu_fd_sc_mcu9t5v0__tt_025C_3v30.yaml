@@ -1,0 +1,21 @@
+settings:
+    lib_name: gf180mcu_fd_sc_mcu9t5v0__tt_025C_3v30.charlib
+    results_dir: gf180mcu_fd_sc_mcu9t5v0__tt_025C_3v30
+    units:
+        current: mA
+        leakage_power: uW
+    temperature: 25
+    named_nodes:
+        primary_power:
+            voltage: 3.3
+        nwell:
+            voltage: 3.3
+    cell_defaults:
+        netlist: ~/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0.spice
+        models:
+            - ~/.ciel/gf180mcuD/libs.tech/ngspice/sm141064.spice typical
+            - ~/.ciel/gf180mcuD/libs.tech/ngspice/design.spice
+        data_slews: [0.02, 0.06127, 0.2062, 0.4828, 0.9139, 1.519, 2.315, 3.317, 4.541, 6]
+        loads: [0.001, 0.00362, 0.01282, 0.03038, 0.05774, 0.09614, 0.1467, 0.2103, 0.288, 0.3806]
+        clock_slews: [0.02, 0.06127, 0.2062, 0.4828, 0.9139, 1.519, 2.315, 3.317, 4.541, 6]
+cells: gf180mcu_fd_sc_mcu9t5v0_cells.yaml
