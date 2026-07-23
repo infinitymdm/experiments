@@ -10,6 +10,8 @@ def run(config_file):
     print(f'Running config "{config_file}"')
     workfiles = []
     config = utils.find_config(config_file)
+    work_dir = Path(config['settings']['results_dir']) / 'work'
+    print(work_dir)
 
     # Characterize cells one at a time, writing results to file for later merge
     for name, cell_config in utils.read_cell_configs(config['cells']):
@@ -24,7 +26,7 @@ def run(config_file):
             continue
 
         # If we already have results for this cell, skip
-        workfile = characterizer.settings.results_dir / 'work' / f'{name}.lib.pkl'
+        workfile = work_dir / f'{name}.lib.pkl'
         if workfile.exists():
             print(f'Skipping previously characterized cell "{name}"')
             workfiles.append(workfile)

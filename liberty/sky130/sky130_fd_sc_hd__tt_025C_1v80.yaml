@@ -1,5 +1,6 @@
 settings:
     lib_name: sky130_fd_sc_hd__tt_025C_1v80.charlib
+    results_dir: sky130_fd_sc_hd__tt_025C_1v80
     units:
         current: mA
         pulling_resistance: kohm
