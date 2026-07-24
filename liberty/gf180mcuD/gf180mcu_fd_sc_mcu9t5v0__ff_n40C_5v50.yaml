@@ -11,7 +11,7 @@ settings:
         nwell:
             voltage: 5.5
     cell_defaults:
-        netlist: ~/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0.spice
+        netlist: ~/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/spice/gf180mcu_fd_sc_mcu9t5v0.spice
         models:
             - ~/.ciel/gf180mcuD/libs.tech/ngspice/sm141064.spice ff
             - ~/.ciel/gf180mcuD/libs.tech/ngspice/design.spice

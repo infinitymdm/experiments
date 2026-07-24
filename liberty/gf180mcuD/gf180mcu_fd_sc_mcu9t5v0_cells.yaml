@@ -1,4 +1,3 @@
-
 gf180mcu_fd_sc_mcu9t5v0__addf_1:
     functions:
         - CO = ((A&B)|(A&CI)|(B&CI))
@@ -134,85 +133,85 @@ gf180mcu_fd_sc_mcu9t5v0__clkinv_16:
 gf180mcu_fd_sc_mcu9t5v0__clkinv_20:
     functions: [ZN = (!I)]
 gf180mcu_fd_sc_mcu9t5v0__dffnq_1:
-    clock: posedge (!CLKN)
+    clock: negedge CLKN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnq_2:
-    clock: posedge (!CLKN)
+    clock: negedge CLKN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnq_4:
-    clock: posedge (!CLKN)
+    clock: negedge CLKN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnrnq_1:
-    clock: posedge (!CLKN)
-    reset: (!RN)
+    clock: negedge CLKN
+    reset: not RN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnrnq_2:
-    clock: posedge (!CLKN)
-    reset: (!RN)
+    clock: negedge CLKN
+    reset: not RN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnrnq_4:
-    clock: posedge (!CLKN)
-    reset: (!RN)
+    clock: negedge CLKN
+    reset: not RN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnrsnq_1:
-    clock: posedge (!CLKN)
-    reset: (!RN)
-    set: (!SETN)
+    clock: negedge CLKN
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnrsnq_2:
-    clock: posedge (!CLKN)
-    reset: (!RN)
-    set: (!SETN)
+    clock: negedge CLKN
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnrsnq_4:
-    clock: posedge (!CLKN)
-    reset: (!RN)
-    set: (!SETN)
+    clock: negedge CLKN
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnsnq_1:
-    clock: posedge (!CLKN)
-    set: (!SETN)
+    clock: negedge CLKN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnsnq_2:
-    clock: posedge (!CLKN)
-    set: (!SETN)
+    clock: negedge CLKN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffnsnq_4:
-    clock: posedge (!CLKN)
-    set: (!SETN)
+    clock: negedge CLKN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
@@ -237,66 +236,66 @@ gf180mcu_fd_sc_mcu9t5v0__dffq_4:
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffrnq_1:
     clock: posedge CLK
-    reset: (!RN)
+    reset: not RN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffrnq_2:
     clock: posedge CLK
-    reset: (!RN)
+    reset: not RN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffrnq_4:
     clock: posedge CLK
-    reset: (!RN)
+    reset: not RN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffrsnq_1:
     clock: posedge CLK
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffrsnq_2:
     clock: posedge CLK
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffrsnq_4:
     clock: posedge CLK
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffsnq_1:
     clock: posedge CLK
-    set: (!SETN)
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffsnq_2:
     clock: posedge CLK
-    set: (!SETN)
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__dffsnq_4:
     clock: posedge CLK
-    set: (!SETN)
+    set: not SETN
     state:
         - IQ1 = D
         - IQN1 = !(D)
@@ -374,66 +373,66 @@ gf180mcu_fd_sc_mcu9t5v0__latq_4:
         - IQN1 = !((!D))
     functions: [Q = IQN1]
 gf180mcu_fd_sc_mcu9t5v0__latrnq_1:
-    reset: (!RN)
+    reset: not RN
     enable: E
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ2]
 gf180mcu_fd_sc_mcu9t5v0__latrnq_2:
-    reset: (!RN)
+    reset: not RN
     enable: E
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ2]
 gf180mcu_fd_sc_mcu9t5v0__latrnq_4:
-    reset: (!RN)
+    reset: not RN
     enable: E
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ2]
 gf180mcu_fd_sc_mcu9t5v0__latrsnq_1:
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     enable: E
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ2]
 gf180mcu_fd_sc_mcu9t5v0__latrsnq_2:
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     enable: E
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ2]
 gf180mcu_fd_sc_mcu9t5v0__latrsnq_4:
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     enable: E
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ2]
 gf180mcu_fd_sc_mcu9t5v0__latsnq_1:
-    set: (!SETN)
+    set: not SETN
     enable: E
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ2]
 gf180mcu_fd_sc_mcu9t5v0__latsnq_2:
-    set: (!SETN)
+    set: not SETN
     enable: E
     state:
         - IQ1 = D
         - IQN1 = !(D)
     functions: [Q = IQ2]
 gf180mcu_fd_sc_mcu9t5v0__latsnq_4:
-    set: (!SETN)
+    set: not SETN
     enable: E
     state:
         - IQ1 = D
@@ -573,66 +572,66 @@ gf180mcu_fd_sc_mcu9t5v0__sdffq_4:
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffrnq_1:
     clock: posedge CLK
-    reset: (!RN)
+    reset: not RN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffrnq_2:
     clock: posedge CLK
-    reset: (!RN)
+    reset: not RN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffrnq_4:
     clock: posedge CLK
-    reset: (!RN)
+    reset: not RN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffrsnq_1:
     clock: posedge CLK
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffrsnq_2:
     clock: posedge CLK
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffrsnq_4:
     clock: posedge CLK
-    reset: (!RN)
-    set: (!SETN)
+    reset: not RN
+    set: not SETN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffsnq_1:
     clock: posedge CLK
-    set: (!SETN)
+    set: not SETN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffsnq_2:
     clock: posedge CLK
-    set: (!SETN)
+    set: not SETN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))
     functions: [Q = IQ1]
 gf180mcu_fd_sc_mcu9t5v0__sdffsnq_4:
     clock: posedge CLK
-    set: (!SETN)
+    set: not SETN
     state:
         - IQ1 = ((D&(!SE))|(SE&SI))
         - IQN1 = !(((D&(!SE))|(SE&SI)))

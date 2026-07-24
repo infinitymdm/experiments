@@ -243,10 +243,10 @@ sky130_fd_sc_hd__clkinvlp_2:
     functions: [Y = (!A)]
 sky130_fd_sc_hd__clkinvlp_4:
     functions: [Y = (!A)]
-sky130_fd_sc_hd__conb_1:
-    functions:
-        - HI = 1
-        - LO = 0
+# sky130_fd_sc_hd__conb_1:
+#     functions:
+#         - HI = 1
+#         - LO = 0
 sky130_fd_sc_hd__dfbbn_1:
     clock: negedge CLK_N
     reset: not RESET_B
