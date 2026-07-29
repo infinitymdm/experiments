@@ -9,7 +9,7 @@ import pickle
 def run(config_file):
     print(f'Running config "{config_file}"')
     workfiles = []
-    config = utils.find_config(config_file)
+    config = utils.find_config(config_file, quiet=False)
     work_dir = Path(config['settings']['results_dir']) / 'work'
     print(work_dir)
 

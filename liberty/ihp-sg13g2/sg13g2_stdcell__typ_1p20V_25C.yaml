@@ -1,0 +1,23 @@
+settings:
+    lib_name: sg13g2_stdcell__typ_1p20V_25C.charlib
+    results_dir: sg13g2_stdcell__typ_1p20V_25C
+    debug: true
+    dry_run: true
+    units:
+        leakage_power: pW
+        pulling_resistance: kOhm
+    temperature: 25
+    named_nodes:
+        primary_power:
+            voltage: 1.2
+        nwell:
+            voltage: 1.2
+    cell_defaults:
+        netlist: ~/.ciel/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+        models:
+            - ~/.ciel/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+            - ~/.ciel/ihp-sg13g2/libs.tech/ngspice/models/sg13g2_moslv_mod.lib
+        data_slews: [0.0186, 0.0966, 0.174, 0.3294, 0.6408, 1.263, 2.5074]
+        loads: [0.001, 0.0234, 0.039, 0.0648, 0.108, 0.18, 0.3]
+        clock_slews: [0.0186, 0.51636, 1.263, 2.5074]
+cells: sg13g2_cells.yaml
